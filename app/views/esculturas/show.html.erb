@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @escultura %>
+
+<div>
+  <%= link_to "Edit this escultura", edit_escultura_path(@escultura) %> |
+  <%= link_to "Back to esculturas", esculturas_path %>
+
+  <%= button_to "Destroy this escultura", @escultura, method: :delete %>
+</div>

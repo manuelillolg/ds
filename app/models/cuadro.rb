@@ -1,0 +1,2 @@
+class Cuadro < ApplicationRecord
+end

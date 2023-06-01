@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  autor: MyString
+  fecha: MyString
+  estilo: MyString
+  precio: 1.5
+  foto: MyString
+
+two:
+  autor: MyString
+  fecha: MyString
+  estilo: MyString
+  precio: 1.5
+  foto: MyString

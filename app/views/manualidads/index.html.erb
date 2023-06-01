@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Manualidads</h1>
+
+<div id="manualidads">
+  <% @manualidads.each do |manualidad| %>
+    <%= render manualidad %>
+    <p>
+      <%= link_to "Show this manualidad", manualidad %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New manualidad", new_manualidad_path %>

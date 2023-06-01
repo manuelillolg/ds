@@ -1,0 +1,2 @@
+class Escultura < ApplicationRecord
+end

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @cuadro %>
+
+<div>
+  <%= link_to "Edit this cuadro", edit_cuadro_path(@cuadro) %> |
+  <%= link_to "Back to cuadros", cuadros_path %>
+
+  <%= button_to "Destroy this cuadro", @cuadro, method: :delete %>
+</div>
