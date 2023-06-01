@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_01_090606) do
+ActiveRecord::Schema[7.0].define(version: 2023_06_01_140759) do
   create_table "cuadros", charset: "latin1", force: :cascade do |t|
     t.string "autor", null: false
     t.string "fecha", null: false
@@ -42,6 +42,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_01_090606) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["foto"], name: "index_manualidads_on_foto", unique: true
+  end
+
+  create_table "users", charset: "latin1", force: :cascade do |t|
+    t.string "username"
+    t.string "password"
+    t.string "password_confirmation"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
 end

@@ -6,8 +6,8 @@ skip_before_action :verify_authenticity_token
 
 def show
       @cuadro = Cuadro.find_by(id: params[:id])
-      if (@project!=nil)
-        render json: @project, status: :ok
+      if (@cuadro!=nil)
+        render json: @cuadro, status: :ok
   else
        render json: :nothing, status: :not_found
     end

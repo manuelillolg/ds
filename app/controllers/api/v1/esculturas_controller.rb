@@ -6,8 +6,8 @@ skip_before_action :verify_authenticity_token
 
 def show
       @escultura = Escultura.find_by(id: params[:id])
-      if (@project!=nil)
-        render json: @project, status: :ok
+      if (@escultura!=nil)
+        render json: @escultura, status: :ok
   else
        render json: :nothing, status: :not_found
     end
