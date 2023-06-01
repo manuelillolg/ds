@@ -1,3 +1,4 @@
+<div class="content">
 <%= form_with(model: manualidad) do |form| %>
   <% if manualidad.errors.any? %>
     <div style="color: red">
@@ -40,3 +41,6 @@
     <%= form.submit %>
   </div>
 <% end %>
+
+<%= link_to "Back to manualidades", manualidads_path %>
+</div>

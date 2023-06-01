@@ -11,5 +11,11 @@
 
   <body>
     <%= yield %>
+    <% if current_user %>
+      User: <%= current_user.username %>
+      <%= link_to "Logout", '/logout', method: :get %>
+    <% end%>
+    <%= link_to "Inicio", '/', method: :get %>
+    
   </body>
 </html>

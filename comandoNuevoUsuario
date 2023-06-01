@@ -1,0 +1,4 @@
+docker-compose exec web rails console
+user = User.new(username: 'nombre_de_usuario', password: 'contraseña', password_confirmation: 'contraseña')
+
+user.save
